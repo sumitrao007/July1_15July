@@ -1,0 +1,69 @@
+what is angular
+SPA- Single Page Application
+It contain only 1head+1 body
+Angular
+ganna.com
+
+MPA- Multipage Application
+React js 
+vue js
+
+Angular Version/History
+Angular Js - 1.x.x -it is developed in Java Script(js)
+
+Angular 2- 2016- It is Developed in Typescript
+It Product of Google+Microsoft
+
+Angular 4- Dec2016- 
+The developers skipped the version 3 due to some confusion. Its final version was released on 23 March 2017.
+- It Adds Routing Concept
+-This version introduced HttpClient, a smaller, easier to use, and more powerful library for making HTTP Requests.
+- It provides the support of conditionally disable animations.
+
+Angular 5- Nov2017
+- It provided some improvements to support for progressive web apps, also provides improvements related to Material Design.
+
+
+Angular 6 may, 2018
+- It was a major relaese which provides some features like: ng update, ng add, Angular Elements, Angular Material + CDK Components, Angular Material Starter Components, CLI Workspaces
+- Animations Performance Improvements, and RxJS v6.
+
+Angular 7 October 18, 2018
+- Updates regarding Application Performance
+Angular Material & CDK
+- Virtual Scrolling
+- Improved Accessibility of Selects
+- Supports Content Projection using web standard for custom elements
+- Dependency updates regarding TypeScript 3.1, RxJS 6.3, Node 10
+
+Latest Version Angular 8- 2018
+
+Angular Architecture
+I Explained Diagram Block
+- View- To Display End User Info
+- component - To Process A data or to apply Business logic
+- Both are Interconneted with each other of Event Binding & Data Binding
+- App Module- It is main module to register your Component,Provider,Service,Routing Module
+- Injector- It is 3rd party Liabary (like httpmodule,service,notification etc) provided by Angular
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
