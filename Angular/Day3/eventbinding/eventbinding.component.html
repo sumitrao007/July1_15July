@@ -1,0 +1,41 @@
+<p>
+  eventbinding works!
+</p>
+
+<button (click)="onclick()">Click Me</button>
+{{name}} <br><br>
+<input type="text" [value]="name">
+<br><br>
+<button (click)="eventinfo($event)" value="Click Me">Event Information</button>
+
+<!-- $event-is A special variable provided by Angular, It gives information about Current Dom element -->
+<br><br>
+<input type="text" (keyup)="onkeyup()">
+<br><br>
+<input type="text" (keydown)="onkeydown()">
+<br><br>
+<input type="text"(change)="onchange()" placeholder="Enter the Name" [style.background]="inputcolor">
+<br><br>
+<button (click)="onDisplay()">Display Information</button> <br><br>
+
+<button (click)="onRed()">Red</button>
+<button (click)="onBlue()">Blue</button>
+<button (click)="onGreen()">Green</button>
+<button (click)="onPink()">Pink</button>
+
+<br><br>
+<div [style.background]="divcolor" class="divclass"></div> <br><br><br>
+<hr>
+<button (click)="onColorchange('red')">Red</button>
+<button (click)="onColorchange('blue')">Blue</button>
+<button (click)="onColorchange('green')">Green</button>
+<button (click)="onColorchange('pink')">Pink</button>
+
+<br><br>
+<div [style.background]="divcolor1" class="divclass"></div>
+<br><br>
+
+<input type="text" (change)="myeventinfo($event)"><br>
+{{Name}}
+
+<br><br><br>

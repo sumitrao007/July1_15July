@@ -1,0 +1,11 @@
+<p>
+  classbinding works!
+</p>
+
+<h1 [class]="myclass" >Class Binding Demo</h1>
+
+<h1 [class]="iserror?myclass1:myclass2" > Condition wise Apply Class </h1>
+
+<h1 [ngClass]="myobj" >Apply Class Binding Using ngClass</h1>
+
+<h1 [class.on]="rating>5" [class.off]="rating<5" > Using Class binding condition apply class </h1>
