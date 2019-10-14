@@ -1,0 +1,60 @@
+<p>
+  eventbinding works!
+</p>
+
+<button (click)="onclick()" >Click Me</button> <br><br>
+
+<button (click)="onclick1($event)" value="Click Event Occur!!!!!" >Click Me</button> <br><br>
+
+<input type="text" (click)="oninputclick($event)" value="" > <br><br>
+
+On Change Event <input type="text" (change)="oninputchange($event)" >
+<br><br>
+
+<input type="text" (change)="onvalidate($event)"><br>
+{{display}}
+<br><br>
+<input type="text" (keyup)="onkeyup()">
+
+<br><br>
+<input type="text" (keydown)="onkeydown()" maxlength="5"  minlength="2"> <br>
+
+<button (click)="result=2+2" >Addition</button><br>
+{{result}}
+<br><br>
+
+<button (click)="result=num1+num2" >Addition</button><br>
+{{result}} <br><br>
+<hr>
+
+<!-- template reference variable -->
+
+<input #inputvalue type="text" placeholder="Enter The Name" > 
+<br> <br> <button (click)="disptext(inputvalue.value)" >Click</button> <br><br>
+<input type="text" placeholder="Result Is" [value]="Result" >
+
+<hr>
+<input #kuchbhi type="text" placeholder="Enter the name"><br><br> <button (click)="onclick2(kuchbhi)">Click </button> <br><br>
+<hr>
+<h1>Two way Binding</h1>
+
+<input type="text" [(ngModel)]="myname" ><br>
+{{myname}}
+
+
+<br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

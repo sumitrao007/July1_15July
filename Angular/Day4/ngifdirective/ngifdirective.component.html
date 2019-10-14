@@ -1,0 +1,11 @@
+<p>
+  ngifdirective works!
+</p>
+
+<div *ngIf="rating<4" > Condition is True !!!!! </div> <br><br>
+<hr>
+<div *ngIf="rating1<4; else  elsepart" > Condition is True !!!!! </div> 
+
+<!-- <div #elsepart > U r in Else Part </div> -->
+
+<ng-template #elsepart >U r in Else Part </ng-template>
