@@ -1,0 +1,28 @@
+<p>
+  childcomp works!
+</p>
+
+<!-- <h1> {{parentdata}} </h1> -->
+
+<!-- <h2> {{parentdataObj.name}} </h2>
+<h2> {{parentdataObj.lastname}} </h2>
+<h2> {{parentdataObj.rollno}} </h2> -->
+
+<table border="1px solid">
+  <thead>
+    <th>#</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Roll No</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of parentdataArrObj;index as i">
+      <td> {{i+1}} </td>
+      <td> {{item.name}} </td>
+      <td> {{item.lastname}} </td>
+      <td> {{item.rollno}} </td>
+    </tr>
+
+  </tbody>
+
+</table>

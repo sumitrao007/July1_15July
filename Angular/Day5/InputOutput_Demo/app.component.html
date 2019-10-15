@@ -1,0 +1,31 @@
+<h1>Parent component!!!!!!</h1>
+<!-- <h2> {{collectdata}} </h2> -->
+
+<!-- <h2> {{collectdata1.Empname}} </h2>
+<h2> {{collectdata1.Salaray}} </h2>
+<h2> {{collectdata1.id}} </h2> -->
+
+<ul>
+    <li *ngFor="let item of collectdata2">
+        {{item.Empname}} &nbsp; {{item.Salaray}} &nbsp; {{item.id}}
+
+    </li>
+</ul>
+
+<hr>
+<!-- <app-childcomp  [parentdata]="msg" ></app-childcomp> -->
+
+<!-- <app-childcomp  [parentdataObj]="myobj"></app-childcomp> -->
+
+<!-- <app-childcomp  [parentdataArrObj]="myarr"></app-childcomp> -->
+
+<!-- <app-childtoparent (childtoparent)="collectdata=$event"></app-childtoparent> -->
+
+<!-- <app-childtoparent (childtoparentOBJ)="collectdata1=$event"></app-childtoparent> -->
+
+
+<app-childtoparent (ChildToParentultiTypeArray)="collectdata2=$event"></app-childtoparent>
+
+
+
+
