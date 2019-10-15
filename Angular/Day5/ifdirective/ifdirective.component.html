@@ -1,0 +1,27 @@
+<p>
+  ifdirective works!
+</p>
+
+<div *ngIf="rating<4" >u R if loop</div> <br><br>
+
+<div *ngIf="rating<4; else elsepart"> U r in If loop using ngIf else </div>
+
+<ng-template #elsepart> U R in Else Part using ngIf else</ng-template> <br><br>
+<hr>
+<div *ngIf="rating<4;then mainpart else elsepart1" > </div>
+
+<ng-template #mainpart>
+    <input type="text" placeholder="Enter the Name" [(ngModel)]="name">
+    <button (click)="Onclick()" >Click Me</button>
+    <div [hidden]="ishidden">{{name}} </div>
+
+     
+</ng-template>
+
+<ng-template #elsepart1>
+
+  U R in Else Part using ngIf else seperate n-template
+</ng-template>
+
+
+

@@ -1,0 +1,18 @@
+<p>
+  ngswitchdirective works!
+</p>
+
+<label for="myinput">Name Of Color</label> &nbsp;&nbsp; 
+<input #inputType 
+type="text" 
+placeholder="Enter Color Name" id="myinput"> 
+&nbsp;&nbsp; 
+<button (click)="onClickcolor(inputType)" >SET</button> 
+<hr>
+
+<div [ngSwitch]="color">
+  <div *ngSwitchCase="'red'" class="divclass"  [style.background]="backcolor" >U r Choice is {{color}}</div>
+  <div *ngSwitchCase="'green'" class="divclass" [style.background]="backcolor"> U r Choice is {{color}} </div>
+  <div *ngSwitchCase="''" class="divclass" [style.background]="backcolor"></div>
+  <div *ngSwitchDefault class="divclass" [style.background]="backcolor==color?'white':''" style="color: black;">Ur {{color }} is Invalid </div>
+</div>
