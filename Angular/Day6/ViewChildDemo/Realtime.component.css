@@ -1,0 +1,12 @@
+.classdiv1{
+    border: 1px solid red;
+    padding-left: 10px;
+}
+
+.classdiv2{
+    border: 1px solid green;
+    padding-left: 10px;
+}
+div{
+    height: 250px;
+}
