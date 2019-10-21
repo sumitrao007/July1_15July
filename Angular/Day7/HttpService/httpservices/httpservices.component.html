@@ -1,0 +1,22 @@
+<p>
+  httpservices works!
+</p>
+
+<table>
+<thead>
+  <th>#</th>
+  <th>Id</th>
+  <th>Title</th>
+  <th>Body</th>
+</thead>
+
+<tbody>
+  <tr *ngFor="let item of posts; index as i">
+    <td> {{i}} </td>
+    <td> {{item.id}} </td>
+    <td> {{item.title}} </td>
+    <td> {{item.body}} </td>
+  </tr>
+</tbody>
+
+</table>
