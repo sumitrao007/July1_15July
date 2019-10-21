@@ -1,0 +1,41 @@
+<p>
+  httpservices works!
+</p>
+
+<label for="">Tilte: </label>&nbsp; <input #inputvalue type="text" placeholder="Enter the Title...." > <br>
+<button (click)="onAdd(inputvalue.value)">ADD</button>
+
+<br><br>
+
+<div [hidden]="ishiden">
+  <label for="">Id: </label>&nbsp;<input type="text" [(ngModel)]="myid" readonly><br><br>
+  <label for="">Title: </label>&nbsp;<input type="text" [(ngModel)]="mytitle"><br><br>
+  <label for="">Body: </label>&nbsp;<input type="text" [(ngModel)]="mybody"><br><br>
+  <button (click)="Updatedata()">Update Data</button>
+</div>
+
+<br><br><br>
+
+<table>
+<thead>
+  <th>#</th>
+  <th>Id</th>
+  <th>Action</th>
+  <th>Title</th>
+  <th>Body</th>
+</thead>
+
+<tbody>
+  <tr *ngFor="let item of posts; index as i">
+    <td> {{i}} </td>
+    <td> {{item.id}} </td>
+    <td><button (click)="onUpdate(item)">Update</button>
+    <br>
+    <button (click)="onDelete(item)">Delete</button>
+    </td>
+    <td> {{item.title}} </td>
+    <td> {{item.body}} </td>
+  </tr>
+</tbody>
+
+</table>
