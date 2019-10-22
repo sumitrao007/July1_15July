@@ -1,0 +1,17 @@
+<p>
+  home works!
+</p>
+
+<!-- <a href="Page1">Page 1</a> -->
+<a [routerLink]="['/Page1',id1]">Page 1</a>
+<a [routerLink]="['/Page2',myid1,myusername]">Page 2</a>
+<a routerLink="/Follower">Follower</a>
+<a routerLink="/QueryParam" [queryParams]="queryobj">Query Param</a>
+<br><br>
+<hr>
+<h2>Programatically Routing</h2>
+
+<button (click)="onPage1()">Page1</button>
+<button (click)="onPage2()">page2</button>
+<button (click)="onfollower()">Follower</button>
+<button (click)="onqueryparam()">Query param</button>
